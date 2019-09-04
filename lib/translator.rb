@@ -19,5 +19,8 @@ end
 
 def get_english_meaning(path, emoticon)
   emotions = load_library(path)
-  
+  if !emotions["get_meaning"].keys.include?(emoticon)
+    return "sortty"
+  end
+  emotions["get_meaning"][emoticon]
 end
