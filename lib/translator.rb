@@ -19,4 +19,5 @@ end
 
 def get_english_meaning(path, emoticon)
   emotions = load_library(path)
+  
 end
