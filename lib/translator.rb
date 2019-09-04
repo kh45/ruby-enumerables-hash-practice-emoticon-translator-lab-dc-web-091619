@@ -10,7 +10,7 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emoticon)
-   emotions = load_library(path)
+  emotions = load_library(path)
   if !emotions["get_emoticon"].keys.include?(emoticon) 
     return "Sorry, that emoticon was not found"
   end
