@@ -20,7 +20,7 @@ end
 def get_english_meaning(path, emoticon)
   emotions = load_library(path)
   if !emotions["get_meaning"].keys.include?(emoticon)
-    return "sortty"
+    return "Sorry, that emoticon was not found"
   end
   emotions["get_meaning"][emoticon]
 end
