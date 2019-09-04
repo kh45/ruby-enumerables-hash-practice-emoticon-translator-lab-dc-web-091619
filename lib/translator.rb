@@ -11,9 +11,10 @@ end
 
 def get_japanese_emoticon(path, emoticon)
    emotions = load_library(path)
-   if !emotions["get_emoticon"][emoticon] 
-     return "Sorry!"
-    else emotions["get_emoticon"][emoticon]
+  if !emotions["get_emoticon"][emoticon] 
+    return "Sorry!"
+  else emotions["get_emoticon"][emoticon]
+  end
 end
 
 def get_english_meaning
